@@ -1,6 +1,6 @@
 {
 	"name": "is-date-object",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"author": "Jordan Harband",
 	"description": "Is this value a JS Date object? This module works cross-realm/iframe, and despite ES6 @@toStringTag.",
 	"license": "MIT",
