@@ -22,7 +22,7 @@ test('not Dates', function (t) {
 test('@@toStringTag', { skip: !hasSymbols || !Symbol.toStringTag }, function (t) {
 	var realDate = new Date();
 	var fakeDate = { valueOf: function () { return realDate.getTime(); }, toString: function () { return String(realDate); } };
-	fakeDate[Symbol.toStringTag] = function () { return 'Date'; };
+	fakeDate[Symbol.toStringTag] = 'Date';
 	t.notOk(isDate(fakeDate), 'fake Date with @@toStringTag "Date" is not Date');
 	t.end();
 });
