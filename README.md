@@ -37,7 +37,7 @@ assert.ok(isDate(new Date()));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [1]: https://npmjs.org/package/is-date-object
-[2]: http://vb.teelaun.ch/ljharb/is-date-object.svg
+[2]: http://versionbadg.es/ljharb/is-date-object.svg
 [3]: https://travis-ci.org/ljharb/is-date-object.svg
 [4]: https://travis-ci.org/ljharb/is-date-object
 [5]: https://david-dm.org/ljharb/is-date-object.svg
