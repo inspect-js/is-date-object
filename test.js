@@ -2,7 +2,7 @@
 
 var test = require('tape');
 var isDate = require('./');
-var hasSymbols = typeof Symbol === 'function' && typeof Symbol() === 'symbol';
+var hasSymbols = typeof Symbol === 'function' && typeof Symbol('') === 'symbol';
 
 test('not Dates', function (t) {
 	t.notOk(isDate(), 'undefined is not Date');
@@ -21,7 +21,10 @@ test('not Dates', function (t) {
 
 test('@@toStringTag', { skip: !hasSymbols || !Symbol.toStringTag }, function (t) {
 	var realDate = new Date();
-	var fakeDate = { toString: function () { return String(realDate); }, valueOf: function () { return realDate.getTime(); } };
+	var fakeDate = {
+		toString: function () { return String(realDate); },
+		valueOf: function () { return realDate.getTime(); }
+	};
 	fakeDate[Symbol.toStringTag] = 'Date';
 	t.notOk(isDate(fakeDate), 'fake Date with @@toStringTag "Date" is not Date');
 	t.end();
