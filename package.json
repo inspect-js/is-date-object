@@ -11,9 +11,7 @@
 		"tests-only": "node --harmony --es-staging test",
 		"posttest": "npm run security",
 		"coverage": "covert test.js",
-		"lint": "npm run jscs && npm run eslint",
-		"jscs": "jscs test.js *.js",
-		"eslint": "eslint test.js *.js",
+		"lint": "eslint test.js *.js",
 		"security": "nsp check"
 	},
 	"repository": {
@@ -35,7 +33,6 @@
 		"foreach": "^2.0.5",
 		"indexof": "^0.0.1",
 		"is": "^3.2.1",
-		"jscs": "^3.0.7",
 		"nsp": "^3.2.1",
 		"semver": "^5.5.0",
 		"tape": "^4.9.0"
