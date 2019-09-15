@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var isDate = require('./');
+var isDate = require('../');
 var hasSymbols = typeof Symbol === 'function' && typeof Symbol('') === 'symbol';
 
 test('not Dates', function (t) {

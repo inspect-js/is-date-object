@@ -6,11 +6,12 @@
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
+		"prepublish": "safe-publish-latest",
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
 		"tests-only": "node --harmony --es-staging test",
 		"posttest": "npx aud",
-		"coverage": "covert test.js",
+		"coverage": "covert test/index.js",
 		"lint": "eslint ."
 	},
 	"repository": {
@@ -26,17 +27,18 @@
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^13.1.1",
+		"@ljharb/eslint-config": "^14.1.0",
 		"covert": "^1.1.1",
-		"eslint": "^5.16.0",
+		"eslint": "^6.4.0",
 		"foreach": "^2.0.5",
 		"indexof": "^0.0.1",
 		"is": "^3.3.0",
-		"semver": "^6.1.1",
-		"tape": "^4.10.2"
+		"safe-publish-latest": "^1.1.3",
+		"semver": "^6.3.0",
+		"tape": "^4.11.0"
 	},
 	"testling": {
-		"files": "test.js",
+		"files": "test/index.js",
 		"browsers": [
 			"iexplore/6.0..latest",
 			"firefox/3.0..6.0",
