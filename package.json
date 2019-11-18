@@ -2,6 +2,9 @@
 	"name": "is-date-object",
 	"version": "1.0.1",
 	"author": "Jordan Harband",
+	"funding": {
+		"url": "https://github.com/sponsors/ljharb"
+	},
 	"description": "Is this value a JS Date object? This module works cross-realm/iframe, and despite ES6 @@toStringTag.",
 	"license": "MIT",
 	"main": "index.js",
