@@ -15,7 +15,9 @@
 		"tests-only": "node --harmony --es-staging test",
 		"posttest": "npx aud",
 		"coverage": "covert test/index.js",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"version": "auto-changelog && git add CHANGELOG.md",
+		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
 	"repository": {
 		"type": "git",
@@ -31,6 +33,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^14.1.0",
+		"auto-changelog": "^1.16.2",
 		"covert": "^1.1.1",
 		"eslint": "^6.4.0",
 		"foreach": "^2.0.5",
@@ -60,5 +63,12 @@
 	},
 	"engines": {
 		"node": ">= 0.4"
+	},
+	"auto-changelog": {
+		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
+		"unreleased": false,
+		"commitLimit": false,
+		"backfillLimit": false
 	}
 }
