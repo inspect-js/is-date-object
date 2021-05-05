@@ -21,7 +21,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/ljharb/is-date-object.git"
+		"url": "git://github.com/inspect-js/is-date-object.git"
 	},
 	"keywords": [
 		"Date",
