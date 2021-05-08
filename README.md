@@ -36,16 +36,16 @@ assert.ok(isDate(new Date()));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [1]: https://npmjs.org/package/is-date-object
-[2]: http://versionbadg.es/inspect-js/is-date-object.svg
+[2]: https://versionbadg.es/inspect-js/is-date-object.svg
 [5]: https://david-dm.org/inspect-js/is-date-object.svg
 [6]: https://david-dm.org/inspect-js/is-date-object
 [7]: https://david-dm.org/inspect-js/is-date-object/dev-status.svg
 [8]: https://david-dm.org/inspect-js/is-date-object#info=devDependencies
 [11]: https://nodei.co/npm/is-date-object.png?downloads=true&stars=true
-[license-image]: http://img.shields.io/npm/l/is-date-object.svg
+[license-image]: https://img.shields.io/npm/l/is-date-object.svg
 [license-url]: LICENSE
-[downloads-image]: http://img.shields.io/npm/dm/is-date-object.svg
-[downloads-url]: http://npm-stat.com/charts.html?package=is-date-object
+[downloads-image]: https://img.shields.io/npm/dm/is-date-object.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=is-date-object
 [codecov-image]: https://codecov.io/gh/inspect-js/is-date-object/branch/main/graphs/badge.svg
 [codecov-url]: https://app.codecov.io/gh/inspect-js/is-date-object/
 [actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/inspect-js/is-date-object
