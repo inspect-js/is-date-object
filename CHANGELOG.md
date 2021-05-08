@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.4](https://github.com/inspect-js/is-date-object/compare/v1.0.3...v1.0.4) - 2021-05-07
+
+### Commits
+
+- [Fix] do not use `Object.prototype.toString` when `Symbol.toStringTag` is shammed [`8943a4a`](https://github.com/inspect-js/is-date-object/commit/8943a4a5035b3f2c8cee9a5edabb55579c16983d)
+- [readme] make all URLs https [`1d4d6cd`](https://github.com/inspect-js/is-date-object/commit/1d4d6cd37365c3a36f98e3f82cfe6262227437db)
+- [Dev Deps] update `eslint` [`a7abeaa`](https://github.com/inspect-js/is-date-object/commit/a7abeaa2409d3a34fccebcb5b362e0b90d0a8883)
+
 ## [v1.0.3](https://github.com/inspect-js/is-date-object/compare/v1.0.2...v1.0.3) - 2021-05-05
 
 ### Commits
