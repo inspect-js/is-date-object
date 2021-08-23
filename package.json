@@ -8,6 +8,12 @@
 	"description": "Is this value a JS Date object? This module works cross-realm/iframe, and despite ES6 @@toStringTag.",
 	"license": "MIT",
 	"main": "index.js",
+	"files": [
+		"index.js",
+		"README.md",
+		"CHANGELOG.md",
+		"LICENCE"
+	],
 	"scripts": {
 		"prepublishOnly": "safe-publish-latest",
 		"prepublish": "not-in-publish || npm run prepublishOnly",
