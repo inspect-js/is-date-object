@@ -16,7 +16,7 @@
 		"tests-only": "nyc tape 'test/**/*.js'",
 		"test:corejs": "nyc tape test-corejs.js",
 		"posttest": "aud --production",
-		"lint": "eslint .",
+		"lint": "eslint --ext=js,mjs .",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
@@ -35,17 +35,17 @@
 		"has-tostringtag": "^1.0.0"
 	},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^17.6.0",
+		"@ljharb/eslint-config": "^20.0.0",
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.3.0",
-		"core-js": "^3.12.0",
-		"eslint": "^7.32.0",
+		"core-js": "^3.19.3",
+		"eslint": "^8.4.1",
 		"foreach": "^2.0.5",
 		"indexof": "^0.0.1",
 		"is": "^3.3.0",
 		"nyc": "^10.3.2",
-		"safe-publish-latest": "^1.1.4",
-		"tape": "^5.3.0"
+		"safe-publish-latest": "^2.0.0",
+		"tape": "^5.3.2"
 	},
 	"testling": {
 		"files": "test/index.js",
