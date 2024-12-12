@@ -19,6 +19,7 @@
 		"test:corejs": "nyc tape test-corejs.js",
 		"posttest": "npx npm@'>= 10.2' audit --production",
 		"lint": "eslint --ext=js,mjs .",
+		"postlint": "tsc && attw -P",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
@@ -38,7 +39,11 @@
 		"has-tostringtag": "^1.0.2"
 	},
 	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.17.1",
 		"@ljharb/eslint-config": "^21.1.1",
+		"@ljharb/tsconfig": "^0.2.2",
+		"@types/core-js": "^2.5.8",
+		"@types/tape": "^5.6.5",
 		"auto-changelog": "^2.5.0",
 		"core-js": "^3.39.0",
 		"encoding": "^0.1.13",
@@ -49,7 +54,8 @@
 		"npmignore": "^0.3.1",
 		"nyc": "^10.3.2",
 		"safe-publish-latest": "^2.0.0",
-		"tape": "^5.9.0"
+		"tape": "^5.9.0",
+		"typescript": "^5.8.0-dev.20241212"
 	},
 	"testling": {
 		"files": "test/index.js",
